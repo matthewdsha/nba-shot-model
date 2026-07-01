@@ -1,6 +1,6 @@
 Predicts the expected field goal percentage (xFG%) of any NBA shot using location, game context, and shot zone. Trained on 1.2M+ shots across 5 seasons of play-by-play data.
 
-Live dashboard: coming soon
+Live dashboard: https://matthewdsha-nba-shot-model.streamlit.app
 API docs: run locally at http://localhost:8000/docs
 
 
