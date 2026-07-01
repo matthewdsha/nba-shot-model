@@ -35,8 +35,10 @@ Dashboard — Streamlit app with an interactive court plot filtered by shot zone
 bashgit clone https://github.com/yourusername/nba-shot-model
 cd nba-shot-model
 python -m venv venv
+
 venv\Scripts\activate        # Windows
-# source venv/bin/activate   # Mac/Linux
+source venv/bin/activate   # Mac/Linux
+
 pip install -r requirements.txt
 
 # Run the full pipeline (ingest → clean → train)
