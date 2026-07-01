@@ -36,9 +36,8 @@ bashgit clone https://github.com/yourusername/nba-shot-model
 cd nba-shot-model
 python -m venv venv
 
-venv\Scripts\activate        # Windows
-
-source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate (for Windows)
+source venv/bin/activate (for Mac/Linux)
 
 pip install -r requirements.txt
 
