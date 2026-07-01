@@ -20,6 +20,8 @@ df = df[(df["LOC_X"].between(-250, 250)) & (df["LOC_Y"].between(-50, 420))]
 
 df["CLOCK_SECONDS"] = df["MINUTES_REMAINING"]*60 + df["SECONDS_REMAINING"]
 df["IS_THREE"] = (df["SHOT_TYPE"] == "3PT Field Goal").astype(int)
+df["LOC_X"] = df["LOC_X"] / 10
+df["LOC_Y"] = df["LOC_Y"] / 10
 
 # One-hot encode zone columns
 df = pd.get_dummies(df, columns=["SHOT_ZONE_BASIC","SHOT_ZONE_AREA","SHOT_TYPE"])

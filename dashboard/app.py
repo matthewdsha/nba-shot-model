@@ -23,10 +23,10 @@ model, feature_cols = load_model()
 # --- Court drawing helper ---
 def draw_court(fig):
   court_lines = [
-    dict(type="circle", x0=-7.5, y0=-7.5, x1=7.5, y1=7.5, line=dict(color="white", width=2)),
-    dict(type="rect", x0=-80, y0=-47.5, x1=80, y1=142.5, line=dict(color="white", width=2), fillcolor="rgba(0,0,0,0)"),
-    dict(type="circle", x0=-60, y0=77.5, x1=60, y1=197.5, line=dict(color="white", width=2)),
-    dict(type="path", path="M -220 -47.5 L -220 92.5 Q 0 350 220 92.5 L 220 -47.5",
+    dict(type="circle", x0=-0.75, y0=-0.75, x1=0.75, y1=0.75, line=dict(color="white", width=2)),
+    dict(type="rect", x0=-8, y0=-4.75, x1=8, y1=14.25, line=dict(color="white", width=2), fillcolor="rgba(0,0,0,0)"),
+    dict(type="circle", x0=-6, y0=7.75, x1=6, y1=19.75, line=dict(color="white", width=2)),
+    dict(type="path", path="M -22 -4.75 L -22 9.25 Q 0 35 22 9.25 L 22 -4.75",
       line=dict(color="white", width=2)),
   ]
   for shape in court_lines:
@@ -115,8 +115,8 @@ else:
   draw_court(fig)
 
   fig.update_layout(
-    xaxis=dict(title="← Left Baseline · Court Width · Right Baseline →", range=[-300, 300]),
-    yaxis=dict(title="Distance from Basket", range=[-50, 430]),
+    xaxis=dict(title="← Left Baseline · Court Width · Right Baseline →", range=[-30, 30]),
+    yaxis=dict(title="Distance from Basket", range=[-5, 43]),
     plot_bgcolor="#1a3a1a",
     paper_bgcolor="rgba(0,0,0,0)",
     legend=dict(orientation="h", y=1.05),
